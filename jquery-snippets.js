@@ -61,6 +61,30 @@
     document.body.appendChild(element);
     element.click();
 
+//Prevent right click
+    //Stops user from right clicking on your page
+    $(document).bind("contextmenu", function(event) {
+        return false;
+    });
+
+//Get Widths and Heights
+
+    //Browser Viewport
+    $(window).width();
+    $(window).height();
+
+    //HTML Document
+    $(document).width();
+    $(document).height();
+
+    //Specific Element
+    $("#element_id").width();
+    $("#element_id").height();
+
+    //Screen size
+    screen.width;
+    screen.height;
+
 
 
 
