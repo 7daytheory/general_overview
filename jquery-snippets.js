@@ -45,6 +45,22 @@
         console.log("Username must contain only numbers and characters!");
     }
 
+//Download File
+
+    //Download file from URL
+    var element = document.createElement("a");
+    element.setAttribute("href", "https://codeshack.io/web/img/codeshack.png");
+    element.setAttribute("download", "codeshack.png");
+    document.body.appendChild(element);
+    element.click();
+
+    //Download textarea text
+    var element = document.createElement("a");
+    element.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent($("#textarea").val()));
+    element.setAttribute("download", "textarea-text.txt");
+    document.body.appendChild(element);
+    element.click();
+
 
 
 
