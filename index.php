@@ -11,6 +11,7 @@
     <?php include "inc/nav.html" ?>
 
     <?php
+    //What will the below display
     $x = true and false;
     var_dump($x);
     //returns booL(true)
@@ -18,7 +19,12 @@
     //$x = true;       // sets $x equal to true
     //true and false;  // results in false, but has no affect on anything
 
+    //Values of A and B
+    $a = '1';
+    $b = &$a; //reference to $a (not setting it to b) 
+    $b = "2$b"; //b == 21 - reference above means anything affected to b also changes a
 
+    //both are equal to 21
 
 
 ?>
