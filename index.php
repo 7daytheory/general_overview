@@ -41,12 +41,29 @@
     //Write a sample of code showing the nested ternary conditional operator in PHP.
     //$number_class = $number == 0 ? 'blue' : ($number > 0 ? 'green' : 'red'); 
     echo "<br>";
-    
+
     $num = 5;
     $num_class2 = $num > 0 ? 'green' : 'red';
     $num_class = $num == 0 ? 'blue' : $num_class2;
 
     echo $num_class;
+
+    echo "<br>";
+
+    //Fix the below code
+    $str1 = 'yabadabadoo';
+    $str2 = 'yaba';
+    // if (strpos($str1,$str2)) {
+    if (strpos($str1,$str2) !== false) {
+        echo "\"" . $str1 . "\" contains \"" . $str2 . "\"";
+    } else {
+        echo "\"" . $str1 . "\" does not contain \"" . $str2 . "\"";
+    }
+
+    // strpos by default returns 0, Note that we used the !== operator, not just the != operator. 
+    // If we use !=, we’ll be back to the problem that 0 is coerced to false when referenced in a boolean expression, so 0 != false will evaluate to false.
+    
+    //output will now be yada conttains yapadabadoo
 
 ?>
     
