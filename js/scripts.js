@@ -48,3 +48,34 @@ function greet(param) {
   } else {
     console.log("Not a number");
   }
+
+  //Implement enqueue and dequeue using only two stacks(Enqueue means to add an element, dequeue to remove an element.)
+  const inputArray = [];
+  const outputArray = [];
+
+  //Add item to list
+  function enqueue(inputArray, item) {
+        inputArray.push(item);
+
+        console.log(inputArray);
+  }
+
+  function dequeue(inputArray, outputArray) {
+    // If the dequeue stack is empty, transfer elements from enqueue stack
+    if (outputArray.length <= 0) {
+        while(inputArray.length > 0) {
+          let elementToOutput = inputArray.pop();
+          outputArray.push(elementToOutput);
+        }
+      }
+  
+      // Pop an element from the dequeue stack
+      return outputArray.pop();
+  }
+
+  enqueue(inputArray, 1);
+  enqueue(inputArray, 2);
+  enqueue(inputArray, 3);
+  dequeue(inputArray, outputArray);
+  
+  console.log(outputArray);
