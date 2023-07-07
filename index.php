@@ -25,7 +25,12 @@
     $b = "2$b"; //b == 21 - reference above means anything affected to b also changes a
 
     //both are equal to 21
+    echo "<br>";
 
+    //Bools - What will the below output be
+    var_dump(0123 == 123); // false (both integers)
+    var_dump('0123' == 123); // true (one is string and one is integer)
+    var_dump('0123' === 123); // false (string === integer)
 
 ?>
     
