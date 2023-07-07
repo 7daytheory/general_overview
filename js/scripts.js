@@ -77,5 +77,19 @@ function greet(param) {
   enqueue(inputArray, 2);
   enqueue(inputArray, 3);
   dequeue(inputArray, outputArray);
-  
+
   console.log(outputArray);
+
+  //Make this work 
+
+//  duplicate([1, 2, 3, 4, 5]); // [1,2,3,4,5,1,2,3,4,5]
+
+  function duplicate(arr) {
+    console.log([...arr, ...arr]);
+
+    //or
+
+    console.log(arr.concat(arr));
+  }
+
+  duplicate([1, 2, 3, 4, 5]); // [1,2,3,4,5,1,2,3,4,5]
