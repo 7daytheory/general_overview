@@ -32,6 +32,22 @@
     var_dump('0123' == 123); // true (one is string and one is integer)
     var_dump('0123' === 123); // false (string === integer)
 
+    //After the code below is executed, what will be the value of $text and what will strlen($text) return? Explain your answer.
+    // $text = 'John ';
+    // $text[10] = 'Doe'; // Adds the letter D to the 10th value of text - so John       D 
+
+    // strlen($text); // 11
+
+    //Write a sample of code showing the nested ternary conditional operator in PHP.
+    //$number_class = $number == 0 ? 'blue' : ($number > 0 ? 'green' : 'red'); 
+    echo "<br>";
+    
+    $num = 5;
+    $num_class2 = $num > 0 ? 'green' : 'red';
+    $num_class = $num == 0 ? 'blue' : $num_class2;
+
+    echo $num_class;
+
 ?>
     
 <script src="js/scripts.js"></script>
