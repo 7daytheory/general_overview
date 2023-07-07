@@ -38,3 +38,13 @@ function greet(param) {
 //     arrayList.pop();
 //   }
   console.log(arrayList);
+
+  //How would you check if a number is an integer?
+  const num = 10;
+  console.log(typeof(num));
+
+  if(num % 1 === 0) {
+    console.log("int");
+  } else {
+    console.log("Not a number");
+  }
