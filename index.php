@@ -8,6 +8,7 @@
     <title>Test Index Page</title>
 </head>
 <body>
+    <?php include "inc/nav.html" ?>
     
 <script src="js/scripts.js"></script>
 </body>
