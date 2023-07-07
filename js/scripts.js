@@ -112,7 +112,26 @@ function greet(param) {
 
     let f = i % 3 == 0,
     b = i % 5 == 0;
-  console.log(f ? (b ? 'FizzBuzz' : 'Fizz') : b ? 'Buzz' : i);
+  //console.log(f ? (b ? 'FizzBuzz' : 'Fizz') : b ? 'Buzz' : i);
   }
+
+  //Given two strings, return true if they are anagrams of one another
+
+ const firstWord = "Mary";
+ const secondWord = "Army";
+
+function isAnagram(first, second) {
+  // For case insensitivity, change both words to lowercase.
+  let a = first.toLowerCase();
+  let b = second.toLowerCase();
+
+  // Sort the strings, and join the resulting array to a string. Compare the results
+  a = a.split("").sort().join("");
+  b = b.split("").sort().join(""); //sorts them from a-z 
+
+  return a === b;
+}
+
+console.log(isAnagram(firstWord, secondWord)); // true
 
   
