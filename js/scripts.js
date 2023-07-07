@@ -32,4 +32,9 @@ function greet(param) {
   var arrayList =  ['a', 'b', 'c', 'd', 'e', 'f'];
 
   arrayList = [];
+  //arrayList.length = 0;
+  //arrayList.splice(0, arrayList.length);
+//   while(arrayList.length) {
+//     arrayList.pop();
+//   }
   console.log(arrayList);
